@@ -10,6 +10,24 @@ nav {margin-bottom: 14px}
 .review-toolbar button {padding:10px 14px;border-radius:9px;border:1px solid #888;background:ButtonFace;color:ButtonText;font:inherit}
 .review-toolbar strong {margin-right:auto}
 .review-hint {font-size:.9rem;opacity:.8}
+.gallery-intro {padding:14px;border:1px solid #8887;border-radius:14px;margin:12px 0}
+.gallery-intro p {margin:7px 0}
+.gallery-navigation {display:flex;gap:9px;flex-wrap:wrap;margin:14px 0}
+.gallery-navigation a {padding:10px 14px;border:1px solid #888;border-radius:9px;text-decoration:none;color:inherit}
+.gallery-case {scroll-margin-top:100px}
+.gallery-case h2 {border-bottom:2px solid #8886;padding:12px 0 6px}
+.gallery-case .case-caption {margin:0 0 14px}
+.gallery-case .case-link {font-size:.9rem}
+.gallery-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:16px}
+.review-card {border:1px solid #8888;border-radius:14px;overflow:hidden;background:Canvas;color:CanvasText;min-width:0}
+.review-card img {width:100%;height:auto;display:block}
+.review-card .image-link {display:block}
+.review-card .card-content {padding:12px}
+.review-card h3 {font-size:1.03rem;margin:0 0 6px}
+.review-card p {margin:6px 0;overflow-wrap:anywhere}
+.review-card details {margin-top:10px}
+.review-card summary {cursor:pointer;padding:5px 0}
+.review-card pre {font-size:.83rem;overflow-wrap:anywhere;white-space:pre-wrap}
 .im img,.im a {display:block;max-width:100%;height:auto}
 @media (max-width:760px) {
   body {padding:10px;font-size:15px}

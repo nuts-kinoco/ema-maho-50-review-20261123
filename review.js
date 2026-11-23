@@ -47,13 +47,13 @@
   }
   function refresh() {document.querySelectorAll('[data-review-count]').forEach(el => el.textContent=summary())}
   toolbar();
-  if (!isIndex) {
-    const rows = [...document.querySelectorAll('tr')].filter(row => row.querySelector('img[src]'));
+  {
+    const rows = [...document.querySelectorAll('tr, .review-card')].filter(row => row.querySelector('img[src]'));
     rows.forEach((row) => {
       const img = row.querySelector('img[src]');
       const name = img.getAttribute('src').split('/').pop();
-      const key = page+':'+name;
-      const target = img.closest('td') || row.lastElementChild;
+      const key = name;
+      const target = row.classList.contains('review-card') ? row.querySelector('.card-content') : (img.closest('td') || row.lastElementChild);
       const controls = document.createElement('div');
       controls.className='review-controls';
       const status = document.createElement('span');
